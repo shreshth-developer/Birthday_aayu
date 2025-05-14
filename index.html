@@ -93,6 +93,9 @@
   }
 }
     body {
+  background: #111 !important;
+  color: #fff !important;
+
       margin: 0;
       padding: 0;
       font-family: 'Great Vibes', cursive;
@@ -114,6 +117,8 @@
       overflow: hidden;
     }
     .emoji-float {
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4)) !important;
+
       position: absolute;
       bottom: -50px;
       font-size: 2rem;
@@ -198,6 +203,10 @@
   animation: fadeIn 1s ease-out forwards;
 }/* Update the message and typed-box styles */
 .message, #typed-box {
+  background: rgba(0, 0, 0, 0.4) !important;
+  color: #fff !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -313,6 +322,8 @@
   }
 
 html {
+  color-scheme: dark;
+
   scroll-behavior: smooth;
 }
 
@@ -341,6 +352,10 @@ html {
   }
   
   .message, #typed-box {
+  background: rgba(0, 0, 0, 0.4) !important;
+  color: #fff !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -439,6 +454,10 @@ img {
 /* Fix backdrop filter for iOS */
 @supports (-webkit-touch-callout: none) {
   .message, #typed-box {
+  background: rgba(0, 0, 0, 0.4) !important;
+  color: #fff !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+
     background: rgba(255, 255, 255, 0.2);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
   }
