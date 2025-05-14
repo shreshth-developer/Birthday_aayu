@@ -496,7 +496,24 @@ img {
     opacity: 1 !important; /* Force video to be visible on iOS */
   }
 }
-  </style>
+  
+  .footer-credit {
+    margin-top: 40px;
+    padding: 15px;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  }
+</style>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
   <script>
@@ -759,5 +776,11 @@ img {
       <span id="typed-text"></span>
     </div>
   </div>
+
+    <footer class="footer-credit">
+      This webapp is designed & developed with 💖 by <strong>Shreyas</strong>
+    </footer>
+  </div> <!-- closing main-content -->
 </body>
+
 </html>
